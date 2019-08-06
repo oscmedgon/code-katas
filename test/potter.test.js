@@ -1,6 +1,6 @@
 const assert = require('assert');
 const potter = require('../katas/potter');
-describe('general sales', function() {
+describe('Potter tests', function() {
     it('should return 0 no input is passed', function() {
         assert.equal(potter(), 0);
     });
@@ -17,8 +17,6 @@ describe('general sales', function() {
     it('should apply a discount of 25% when buy 5 books', function() {
         assert.equal(potter({first: 1, second: 1, third: 1, fourth: 1, fifth: 1}), 30)
     });
-});
-describe('Different discounts to groups of books', function() {
     it('should apply a discount of 5% when buy 2 different books and buy three books', function () {
         assert.equal(potter({first: 2, second: 1}), 23.2)
     });
